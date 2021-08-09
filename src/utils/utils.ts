@@ -135,7 +135,8 @@ export function toFileName(url: string, id: string, language: string) {
         .join("-")
         .slice(-32);
     const ext = languageToExtensions(language);
-    return `${parsedURL.hostname}_${toAlphaNum(parsedURL.pathname)}_${toAlphaNum(shortId)}.${ext}`;
+    const now = new Date();
+    return `${parsedURL.hostname}_${toAlphaNum(parsedURL.pathname)}_${toAlphaNum(shortId)}_${now.getTime()}.${ext}`;
 }
 
 // Given a language name, returns a filename extension. Can return undefined.

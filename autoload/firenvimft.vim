@@ -8,6 +8,8 @@ let s:patterns_to_ft = {
         \ '/gitter.com_.*\.txt$': 'markdown',
         \ '/riot.im_.*\.txt$': 'markdown',
         \ '/lobste.rs_.*\.txt$': 'markdown',
+        \ '/play.golang.org_.*\.txt$': 'go',
+        \ '/play.kotlinlang.org_.*\.txt$': 'kotlin',
         \ '/cocalc.com_.*\.txt$': 'python',
         \ '/kaggleusercontent.com_.*\.txt$': 'python',
   \ }

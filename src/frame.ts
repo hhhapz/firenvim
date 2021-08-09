@@ -256,7 +256,6 @@ export const isReady = new Promise((resolve, reject) => {
                 nvim.command("doautocmd FocusGained");
             });
             window.addEventListener("blur", () => {
-                document.documentElement.style.opacity = "0.5";
                 nvim.command("doautocmd FocusLost");
             });
             keyHandler.focus();
